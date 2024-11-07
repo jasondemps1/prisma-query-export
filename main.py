@@ -1,6 +1,9 @@
 import os
 from exporters import csv
 from pcpi import session_loader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 session = session_loader.load_config_env()
 cspm_session = session.create_cspm_session()
